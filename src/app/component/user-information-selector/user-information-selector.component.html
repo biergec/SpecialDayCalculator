@@ -1,0 +1,125 @@
+<div class="row mb-50">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <mat-form-field style="width: 100%">
+      <input
+        matInput
+        [(ngModel)]="userSelectedBirthday"
+        [max]="maximumSelectDate"
+        [matDatepicker]="datePicker"
+        placeholder="Doğum Tarihinizi Seçiniz"
+      />
+      <mat-datepicker-toggle
+        matSuffix
+        [for]="datePicker"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #datePicker></mat-datepicker>
+    </mat-form-field>
+
+    <div class="text-center">
+      <button mat-raised-button color="primary" (click)="userBirthdaySelect()">
+        Hesapla!
+      </button>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class=" text-right">
+      <div class="text-right d-flex justify-content-end">
+        <button
+          *ngIf="!isSelectedValue1"
+          mat-mini-fab
+          color="primary"
+          class="mr-1 "
+          (click)="luckyNumberChange(1)"
+        >
+          1
+        </button>
+        <button
+          *ngIf="isSelectedValue1"
+          mat-mini-fab
+          color="warn"
+          (click)="luckyNumberChange(1)"
+          class="mr-1 "
+        >
+          1
+        </button>
+        <button
+          *ngIf="!isSelectedValue3"
+          mat-mini-fab
+          color="primary"
+          (click)="luckyNumberChange(3)"
+          class="mr-1"
+        >
+          3
+        </button>
+        <button
+          *ngIf="isSelectedValue3"
+          (click)="luckyNumberChange(3)"
+          mat-mini-fab
+          color="warn"
+          class="mr-1"
+        >
+          3
+        </button>
+        <button
+          *ngIf="!isSelectedValue5"
+          mat-mini-fab
+          (click)="luckyNumberChange(5)"
+          color="primary"
+          class="mr-1"
+        >
+          5
+        </button>
+        <button
+          *ngIf="isSelectedValue5"
+          mat-mini-fab
+          color="warn"
+          class="mr-1"
+          (click)="luckyNumberChange(5)"
+        >
+          5
+        </button>
+        <button
+          *ngIf="!isSelectedValue7"
+          mat-mini-fab
+          color="primary"
+          (click)="luckyNumberChange(7)"
+          class="mr-1"
+        >
+          7
+        </button>
+        <button
+          *ngIf="isSelectedValue7"
+          (click)="luckyNumberChange(7)"
+          mat-mini-fab
+          color="warn"
+          class="mr-1"
+        >
+          7
+        </button>
+        <button
+          *ngIf="!isSelectedValue9"
+          mat-mini-fab
+          (click)="luckyNumberChange(9)"
+          color="primary"
+          class="mr-1"
+        >
+          9
+        </button>
+        <button
+          *ngIf="isSelectedValue9"
+          (click)="luckyNumberChange(9)"
+          mat-mini-fab
+          color="warn"
+          class="mr-1"
+        >
+          9
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-user-day-information-calculate
+  [userSelectedValues]="userBirthdayAndSelectedNumber"
+></app-user-day-information-calculate>
