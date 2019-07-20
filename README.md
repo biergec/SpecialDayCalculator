@@ -1,6 +1,8 @@
 # AngularSpecialDayCalculator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.4.
+You can learn your age at the end of 1, 10, 100, 1000, 10000, 10000 days after your birthday with the Special Day Calculator.
+
+Doğum gününüzden sonra geçen 1, 10, 100, 1000, 10000, 10000 gün sonundaki yaşınızı Special Day Calculator ile öğrenebilirsiniz.
 
 ## Development server
 
