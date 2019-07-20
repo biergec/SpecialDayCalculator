@@ -1,4 +1,4 @@
-# AngularSpecialDayCalculator
+# Angular Special Day Calculator
 
 You can learn your age at the end of 1, 10, 100, 1000, 10000, 10000 days after your birthday with the Special Day Calculator.
 
