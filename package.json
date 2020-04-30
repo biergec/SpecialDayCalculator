@@ -23,7 +23,7 @@
     "@angular/router": "~8.0.1",
     "angular-bootstrap-datetimepicker": "^3.0.0",
     "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "moment": "^2.24.0",
     "ngx-toastr": "^10.0.4",
     "open-iconic": "^1.1.1",
